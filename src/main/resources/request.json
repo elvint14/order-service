@@ -1,0 +1,23 @@
+{
+  "description": "description",
+  "deliveryPrice": 1.5,
+  "deliveryWeight": 3.0,
+  "addressFrom": {
+    "country": "AZ",
+    "city": "BAKU",
+    "latitude": 40.2566,
+    "longitude": 40.2566,
+    "postalCode": "AZ1000",
+    "phone": "+994553969332",
+    "description": "TEST"
+  },
+  "addressTo": {
+    "country": "AZ",
+    "city": "BAKU",
+    "latitude": 40.2566,
+    "longitude": 40.2566,
+    "postalCode": "AZ1000",
+    "phone": "+994553969332",
+    "description": "TEST"
+  }
+}
