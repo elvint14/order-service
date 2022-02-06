@@ -107,7 +107,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public BaseResponse<?> getDetailsOfAllOrder() {
         return BaseResponse.ok(
-                orderRepository.findAllCustomer(
+                orderRepository.findAllByCustomer(
                         userService.findCurrentUserFromContextOrThrEx()
                 )
         );
@@ -157,9 +157,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public BaseResponse<?> findDetailsOfAllOrderByCourier() {
-        final UserEntity courier = userService.findCurrentUserFromContextOrThrEx();
         return BaseResponse.ok(
-                orderRepository.findAllCustomer(courier)
+                orderRepository.findAllByCustomer(
+                        userService.findCurrentUserFromContextOrThrEx()
+                )
         );
     }
 
